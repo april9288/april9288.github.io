@@ -1,0 +1,58 @@
+.typingSection{
+	height: 40vh;
+	margin-top:2rem;
+}
+
+.oneTyping{
+	color: white;
+	font-size: 4rem;
+	font-family: 'Roboto Slab', serif;
+}
+
+
+.skillseticon{
+	height: 60px;
+	margin: 0 1rem;
+	transition: all .2s ease-in-out;
+}
+
+.skillseticon:hover{
+	transform: scale(1.1);
+}
+
+.arrowDownDiv{
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
+	height:7rem;
+}
+
+.arrowDown{
+	color:white;
+	font-size: 4rem;
+	margin: 0 1rem;
+	transition: all .2s ease-in-out;
+}
+
+.arrowDown:hover{
+	border: 3px solid white;
+    border-radius: 3rem;
+	transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 650px) {
+	.barIcons{
+		display:none;
+	}
+	.oneTyping{
+		font-size: 2.5rem;
+	}
+	.skillseticon{
+		height: 45px;
+		margin: none;
+	}
+	.arrowDownDiv{
+		height:10rem;
+	}
+} 
