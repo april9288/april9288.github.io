@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FirstPage from './FirstPage';
+import PF1 from './subcomp/PF1';
 import './App.css';
 
 import PropTypes from 'prop-types';
@@ -16,7 +17,6 @@ const styles = theme => ({
 	backgroundColor: "transparent",
   },
   toolbarStyle : {
-
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -24,6 +24,12 @@ const styles = theme => ({
   },
   FirstPage : {
   	height: "90vh"
+  },
+  Portfolios : {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "10rem 0"
   }
 });
 
@@ -53,12 +59,11 @@ render() {
 	<section className={classes.FirstPage}>
 		<FirstPage />
 	</section>
-	<section className={classes.FirstPage}>
-		<FirstPage />
+
+	<section className={classes.Portfolios}>
+		<PF1 />
 	</section>
-	<section className={classes.FirstPage}>
-		<FirstPage />
-	</section>
+
 	</div>
 	);
 	}

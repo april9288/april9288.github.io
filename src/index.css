@@ -11,11 +11,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 	background-color: #12375c;
-	background-image: linear-gradient(180deg, #12375c 65%, #346b3b 100%);
+/*	background-image: linear-gradient(180deg, #12375c 65%, #346b3b 100%);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 }
 
 code {
