@@ -13,3 +13,9 @@
 	color:#69e781;
 	transform: scale(1.1);
 }
+
+@media only screen and (max-width: 650px) {
+	.barIcons{
+		font-size: 2.0rem;
+	}
+}

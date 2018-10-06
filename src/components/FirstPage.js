@@ -27,8 +27,7 @@ class FirstPage extends Component {
 		    <Typing.Delay ms={1000} />
 		    <span className="oneTyping"> I'm James Kim</span><br />
 		    <Typing.Delay ms={1000} />
-		    <Typing.Backspace count={14} />
-		    <span className="oneTyping"> I'm a Web Developer</span>
+		    <span className="oneTyping"> I'm a <span style={{color:"#69e781"}}>Web Developer</span></span>
 		    <Typing.Delay ms={1000} />
 		    <Typing.Backspace count={20} />
 		    <span className="oneTyping"> Coding is fun</span>
@@ -38,7 +37,7 @@ class FirstPage extends Component {
 		    <Typing.Delay ms={1000} />
 		    <Typing.Backspace count={5} />
 		    <span className="oneTyping"> my life</span>
-		    <Typing.Delay ms={1000000} />
+		    <Typing.Delay ms={10000000} />
 		  </Typing>
 		</div>
 
