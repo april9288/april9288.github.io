@@ -52,8 +52,10 @@ class FirstPage extends Component {
 		  </div>
 
 		  <div className="arrowDownDiv">
-		  	<i className="fas fa-angle-down arrowDown"></i>
+		  	<a rel="noopener noreferrer" href="#portfolioStart" sytle={{textDecoration: "none"}}><i className="fas fa-angle-down arrowDown"></i></a>
 		  </div>
+
+		  
 
     	</section>
     );

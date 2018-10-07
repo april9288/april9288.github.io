@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FirstPage from './FirstPage';
-import PF1 from './subcomp/PF1';
+import Footer from './Footer';
 import './App.css';
 
 import PropTypes from 'prop-types';
@@ -8,6 +8,9 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+
+import PortfolioContainer from './PortfolioContainer';
+import { portfolios } from './PortfolioData';
 
 const styles = theme => ({
   root: {
@@ -28,10 +31,17 @@ const styles = theme => ({
   Portfolios : {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
-    margin: "10rem 0"
+    margin: "10rem 0",
+    flexWrap : "wrap"
   }
 });
+
+const Portfolios = (portfolios) => {
+  const EachPortfolio = portfolios.map(onePortfolio => {
+    return <PortfolioContainer key={onePortfolio.id} onePortfolio={onePortfolio} />
+  })
+  return EachPortfolio;
+}
 
 class App extends Component {
 
@@ -60,9 +70,11 @@ render() {
 		<FirstPage />
 	</section>
 
-	<section className={classes.Portfolios}>
-		<PF1 />
+	<section id="portfolioStart" className={classes.Portfolios}>
+		{Portfolios(portfolios)}
 	</section>
+
+  <Footer />
 
 	</div>
 	);

@@ -14,10 +14,10 @@ const theme = createMuiTheme({
     secondary: {
       main: '#69e781',
     },
-    transparent: {
-      main: "transparent",
+    error: {
+      main: "#f52549",
     }
-  },
+  }
 });
 
 ReactDOM.render(        
