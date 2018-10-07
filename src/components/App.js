@@ -45,6 +45,15 @@ const Portfolios = (portfolios) => {
 
 class App extends Component {
 
+  componentDidMount() {
+		fetch("https://soriapi.herokuapp.com/")
+		.then(()=>console.log("Wake up sori api!"))
+		.catch(e=>console.log(e))
+		fetch("https://fruitzapi.herokuapp.com/")
+		.then(()=>console.log("Wake up fruitz api!"))
+		.catch(e=>console.log(e))
+	}
+
 render() {
 	const { classes, theme } = this.props;
 	return (
