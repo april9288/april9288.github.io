@@ -30,7 +30,10 @@ const styles = theme => ({
 });
 
 const chips = (classes, skills) => {
-  const EachChip = skills.map(skill => {
+
+  let newSkillsArray = skills.filter(skill => skill !== "All");
+
+  const EachChip = newSkillsArray.map(skill => {
 
     let bgColor = {
       background : "rgb(5,182,226)"
@@ -94,7 +97,7 @@ class PortfolioContainer extends React.Component {
 
 render() {
 
-  const { classes, theme, onePortfolio } = this.props;
+  const { classes, onePortfolio } = this.props;
 
   return (
     <Card className={classes.card}>
@@ -150,7 +153,6 @@ render() {
 
 PortfolioContainer.propTypes = {
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(PortfolioContainer);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FirstPage from './FirstPage';
+import Skillsets from './Skillsets';
 import Footer from './Footer';
 import './App.css';
 
@@ -10,14 +11,14 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
 import PortfolioContainer from './PortfolioContainer';
-import { portfolios } from './PortfolioData';
+import { portfoliosFromData } from './PortfolioData';
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
   },
   appBar : {
-	backgroundColor: "transparent",
+	backgroundColor: "primary",
   },
   toolbarStyle : {
     display: "flex",
@@ -25,15 +26,12 @@ const styles = theme => ({
     alignItems: "center",
     color:"white"
   },
-  FirstPage : {
-  	height: "90vh"
-  },
   Portfolios : {
     display: "flex",
     justifyContent: "center",
-    margin: "10rem 0",
+    margin: "5rem 0",
     flexWrap : "wrap"
-  }
+  },
 });
 
 const Portfolios = (portfolios) => {
@@ -44,18 +42,36 @@ const Portfolios = (portfolios) => {
 }
 
 class App extends Component {
-
-  componentDidMount() {
-		fetch("https://soriapi.herokuapp.com/")
-		.then(()=>console.log("Wake up sori api!"))
-		.catch(e=>console.log(e))
-		fetch("https://fruitzapi.herokuapp.com/")
-		.then(()=>console.log("Wake up fruitz api!"))
-		.catch(e=>console.log(e))
+constructor() {
+	super();
+	this.state = {
+    portfolios : portfoliosFromData,
+		filter : 'All',
 	}
+	
+} 
+
+// componentDidMount() {
+// 	fetch("https://soriapi.herokuapp.com/")
+// 	.then(()=>console.log("Wake up sori api!"))
+// 	.catch(e=>console.log(e))
+// 	fetch("https://fruitzapi.herokuapp.com/")
+// 	.then(()=>console.log("Wake up fruitz api!"))
+// 	.catch(e=>console.log(e))
+// }
+
+filterClick = (iconClicked) => {
+	let filter = iconClicked;
+	this.setState({filter});
+}
 
 render() {
-	const { classes, theme } = this.props;
+	const { classes } = this.props;
+
+  const filteredPortfolio = this.state.portfolios.filter(portfolio => {
+      return portfolio.skills.includes(this.state.filter) || portfolio.skills.includes(...this.state.filter);
+    })
+
 	return (
 	<div className="App">
 	<section className={classes.root}>
@@ -75,24 +91,25 @@ render() {
 	  </AppBar>
 	</section>
 
-	<section className={classes.FirstPage}>
-		<FirstPage />
+	<FirstPage />
+
+	<section id="portfolioStart">
+		<Skillsets filterClick={this.filterClick}/>
 	</section>
 
-	<section id="portfolioStart" className={classes.Portfolios}>
-		{Portfolios(portfolios)}
+	<section className={classes.Portfolios}>
+		{Portfolios(filteredPortfolio)}
 	</section>
 
   <Footer />
 
 	</div>
 	);
-	}
+  }
 }
 
 App.propTypes = {
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles, { withTheme: true })(App);

@@ -1,4 +1,4 @@
-export const portfolios = [
+export const portfoliosFromData = [
   {
     id: 1,
     title: 'Weather App (with Redux)',
@@ -6,7 +6,7 @@ export const portfolios = [
     page: 'https://april9288.github.io/weatherRedux/',
     repo: 'https://github.com/april9288/weatherRedux/',
     image: './static/weatherRedux.png',
-    skills: ["React", "Redux", "Google Geolocation api", "Darksky api"]
+    skills: ["All","React", "Redux", "Google Geolocation api", "Darksky api"]
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const portfolios = [
     page: 'https://april9288.github.io/4wines/',
     repo: 'https://github.com/april9288/4wines/',
     image: './static/4wines.png',
-    skills: ["HTML", "CSS"]
+    skills: ["All","HTML", "CSS"]
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const portfolios = [
     page: 'https://april9288.github.io/boda/',
     repo: 'https://github.com/april9288/boda/',
     image: './static/boda.png',
-    skills: ["React", "Clarifai api"]
+    skills: ["All","React", "Clarifai api"]
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const portfolios = [
     content: "It's my first pygame project. It's a simple shooting game. There is a battle ship moving up, down, back and forth with keyboard. Spacebar is to fire bullets.",
     repo: 'https://github.com/april9288/firestorm/',
     image: './static/firestorm.png',
-    skills: ["Python 3", "Pygame"]
+    skills: ["All","Python 3", "Pygame"]
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ export const portfolios = [
     page: 'https://april9288.github.io/fruitz/',
     repo: 'https://github.com/april9288/fruitz/',
     image: './static/fruitz.png',
-    skills: ["React", "Redux", "Express.js", "MongoDB", "KNN algorithm"],
+    skills: ["All","React", "Redux", "Express.js", "MongoDB", "KNN algorithm"],
     backend: "https://github.com/april9288/fruitz_api"
   },
   {
@@ -51,7 +51,7 @@ export const portfolios = [
     page: 'https://april9288.github.io/CssGridGame/',
     repo: 'https://github.com/april9288/CssGridGame/',
     image: './static/gridgame.png',
-    skills: ["React", "Group Project"]
+    skills: ["All","React", "Group Project"]
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const portfolios = [
     page: 'https://april9288.github.io/kikaku/',
     repo: 'https://github.com/april9288/kikaku/',
     image: './static/kikaku.png',
-    skills: ["React", "Youtube api"]
+    skills: ["All","React", "Youtube api"]
   },
   {
     id: 8,
@@ -69,16 +69,16 @@ export const portfolios = [
     page: 'https://april9288.github.io/MiniCar/',
     repo: 'https://github.com/april9288/MiniCar/',
     image: './static/minicar.png',
-    skills: ["HTML", "Three.js"]
+    skills: ["All","HTML", "Three.js"]
   },
   {
     id: 9,
     title: 'Repairion',
-    content: "Simple startup landing page.",
+    content: "Simple startup landing page with Material design framework.",
     page: 'https://april9288.github.io/repairion/',
     repo: 'https://github.com/april9288/repairion/',
     image: './static/repairion.png',
-    skills: ["HTML", "CSS"]
+    skills: ["All","HTML", "CSS"]
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ export const portfolios = [
     page: 'https://april9288.github.io/sori/',
     repo: 'https://github.com/april9288/sori/',
     image: './static/sori.png',
-    skills: ["React", "Express.js", "IBM Watson api", "Indico api"],
+    skills: ["All","React", "Express.js", "IBM Watson api", "Indico api"],
     backend: "https://github.com/april9288/sori_api"
   }
 ];

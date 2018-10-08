@@ -9,7 +9,10 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
   root: {
     width: '100%',
-    textAlign: "center"
+    textAlign: "center",
+  },
+  footerAppBar: {
+    background: "rgb(44,44,44)"
   },
   footerContainer:{
     padding: "3rem 0 1rem 0",
@@ -25,7 +28,7 @@ const Footer = ({ classes }) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.footerAppBar}>
         <Grid container className={classes.footerContainer}>
 
             <Grid item xs={12} sm={12}>
@@ -37,7 +40,7 @@ const Footer = ({ classes }) => {
 
             <Grid item xs={12} sm={12}>
               <p className={classes.title}>
-                Made with Love By James Jongho Kim
+                &copy; 2018 James Jongho Kim All Rights Reserved
               </p>
             </Grid>
 

@@ -1,0 +1,30 @@
+.skillsetIcons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap:wrap;
+} 
+
+.skillseticon{
+	height: 60px;
+	margin: 1rem;
+	transition: all .2s ease-in-out;
+}
+
+.skillseticon:hover{
+	transform: scale(1.1);
+}
+
+.skillseticonAll{
+	margin: 1rem!important;
+}
+
+@media only screen and (max-width: 580px) {
+	.skillseticon{
+		height: 45px;
+	}
+	.skillseticonAll{
+		height: 45px!important;
+		width: 45px!important;
+	}
+} 
