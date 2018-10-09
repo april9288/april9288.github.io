@@ -20,7 +20,7 @@ export const portfoliosFromData = [
   {
     id: 3,
     title: 'Boda (Object Recognition)',
-    content: "It's a object recognition app built with React and Clarifai api.",
+    content: "It's an object recognition app built with React and Clarifai api.",
     page: 'https://april9288.github.io/boda/',
     repo: 'https://github.com/april9288/boda/',
     image: './static/boda.png',
@@ -41,7 +41,7 @@ export const portfoliosFromData = [
     page: 'https://april9288.github.io/fruitz/',
     repo: 'https://github.com/april9288/fruitz/',
     image: './static/fruitz.png',
-    skills: ["All","React", "Redux", "Express.js", "MongoDB", "KNN algorithm"],
+    skills: ["All","React", "Redux", "Express.js", "Mongoose", "KNN algorithm"],
     backend: "https://github.com/april9288/fruitz_api"
   },
   {
@@ -55,12 +55,12 @@ export const portfoliosFromData = [
   },
   {
     id: 7,
-    title: 'Youtube Clone',
-    content: "It's a simple Youtube video search app built with React.",
-    page: 'https://april9288.github.io/kikaku/',
-    repo: 'https://github.com/april9288/kikaku/',
-    image: './static/kikaku.png',
-    skills: ["All","React", "Youtube api"]
+    title: 'YouMedia (with Redux)',
+    content: "It's a Youtube clone website. You can search and watch videos. It's built with React and Redux. 100% stateless.",
+    page: 'https://april9288.github.io/youMedia/',
+    repo: 'https://github.com/april9288/youMedia/',
+    image: './static/youMedia.png',
+    skills: ["All","React", "Redux", "Youtube api"]
   },
   {
     id: 8,
