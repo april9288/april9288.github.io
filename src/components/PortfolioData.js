@@ -24,7 +24,7 @@ export const portfoliosFromData = [
     page: 'https://april9288.github.io/boda/',
     repo: 'https://github.com/april9288/boda/',
     image: './static/boda.png',
-    skills: ["All","React", "Clarifai api"]
+    skills: ["All","React", "Redux", "React-router v4", "Clarifai api"]
   },
   {
     id: 4,

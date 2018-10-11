@@ -50,7 +50,7 @@ const chips = (classes, skills) => {
         bgColor = {
           background : "rgb(34, 29, 30)"
         }
-    } else if (skill === "Router") {
+    } else if (skill === "React-router v4") {
         bgColor = {
           background : "rgb(202, 66, 69)"
         }
