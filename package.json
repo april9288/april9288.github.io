@@ -1,18 +1,18 @@
 {
   "name": "april9288.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://april9288.github.io/",
   "dependencies": {
-    "@material-ui/core": "^3.1.2",
-    "@material-ui/icons": "^3.0.1",
-    "ajv": "^6.5.4",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "ajv": "^6.10.0",
     "classnames": "^2.2.6",
     "gh-pages": "^2.0.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
