@@ -40,7 +40,7 @@ const Footer = ({ classes }) => {
 
             <Grid item xs={12} sm={12}>
               <p className={classes.title}>
-                &copy; 2018 James Jongho Kim All Rights Reserved
+                &copy; 2019 James Jongho Kim All Rights Reserved
               </p>
             </Grid>
 

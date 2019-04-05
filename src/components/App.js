@@ -38,7 +38,7 @@ const Portfolios = (portfolios) => {
   const EachPortfolio = portfolios.map(onePortfolio => {
     return <PortfolioContainer key={onePortfolio.id} onePortfolio={onePortfolio} />
   })
-  return EachPortfolio;
+  return EachPortfolio
 }
 
 class App extends Component {
@@ -51,14 +51,6 @@ constructor() {
 	
 } 
 
-// componentDidMount() {
-// 	fetch("https://soriapi.herokuapp.com/")
-// 	.then(()=>console.log("Wake up sori api!"))
-// 	.catch(e=>console.log(e))
-// 	fetch("https://fruitzapi.herokuapp.com/")
-// 	.then(()=>console.log("Wake up fruitz api!"))
-// 	.catch(e=>console.log(e))
-// }
 
 filterClick = (iconClicked) => {
 	let filter = iconClicked;
