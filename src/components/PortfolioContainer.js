@@ -81,6 +81,11 @@ const chips = (classes, skills) => {
           backgroundColor: "#336c9c",
           backgroundImage: "linear-gradient(90deg, #336c9c 25%, #FFE32C 100%)"
         }
+    } else if (skill === "Postgresql") {
+        bgColor = {
+          backgroundColor: "#0064a5",
+          backgroundImage: "linear-gradient(90deg, #0064a5 25%, #336791 100%)"
+        }
     } else {
         bgColor = {
           backgroundColor: "#12375c",
@@ -133,9 +138,14 @@ render() {
               </Button>
             )
         }
-        <Button variant="outlined" size="small" target="_blank" component="a" href={onePortfolio.repo} color="primary">
-          Repo
-        </Button>
+        {
+          (onePortfolio.repo) 
+          && (
+            <Button variant="outlined" size="small" target="_blank" component="a" href={onePortfolio.repo} color="primary">
+              Repo
+            </Button>
+            )
+        }
         {
           (onePortfolio.backend) 
           && (

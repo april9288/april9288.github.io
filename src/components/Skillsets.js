@@ -20,7 +20,7 @@ const Skillsets = ({filterClick}) => {
 		    	<img className = "skillseticon" alt="icon" src = {NodeIcon} onClick={()=>filterClick("Express.js")}/>
 		    	<img className = "skillseticon" alt="icon" src = {MongoIcon} onClick={()=>filterClick("Mongoose")}/>
 		    	<img className = "skillseticon" alt="icon" src = {FBIcon} onClick={()=>filterClick("Firebase")}/>
-		    	<img className = "skillseticon" alt="icon" src = {SQLIcon} onClick={()=>filterClick("SQL")}/>
+		    	<img className = "skillseticon" alt="icon" src = {SQLIcon} onClick={()=>filterClick("Postgresql")}/>
 		  </div>
     );
 }

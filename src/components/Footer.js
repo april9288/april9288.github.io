@@ -33,7 +33,7 @@ const Footer = ({ classes }) => {
 
             <Grid item xs={12} sm={12}>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/april9288/" sytle={{textDecoration: "none"}}><i className="fab fa-github-alt footerIcons"></i></a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jongho-kim-b05618170/" sytle={{textDecoration: "none"}}><i className="fab fa-linkedin footerIcons"></i></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/james-kim-teamplayer/" sytle={{textDecoration: "none"}}><i className="fab fa-linkedin footerIcons"></i></a>
             </Grid>
 
             <Divider />

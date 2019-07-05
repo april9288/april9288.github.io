@@ -10,7 +10,7 @@ class FirstPage extends Component {
     		<img src={Mypic} alt="mypic" className="firstPagePicture" width={200} height={200}/>
     		<div className="firstPageTyping">
     			<span>Hello! I'm James Kim,</span>
-    			<span>Web Developer</span>
+    			<span>Software Engineer</span>
     		</div>
     	</div>
 

@@ -60,7 +60,9 @@ filterClick = (iconClicked) => {
 render() {
 	const { classes } = this.props;
 
-  const filteredPortfolio = this.state.portfolios.filter(portfolio => {
+  const sortedPortfolio = this.state.portfolios.sort((a,b)=> b.id - a.id)
+
+  const filteredPortfolio = sortedPortfolio.filter(portfolio => {
       return portfolio.skills.includes(this.state.filter) || portfolio.skills.includes(...this.state.filter);
     })
 
@@ -76,7 +78,7 @@ render() {
               </span>
               <span>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/april9288/" sytle={{textDecoration: "none"}}><i className="fab fa-github-alt barIcons"></i></a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jongho-kim-b05618170/" sytle={{textDecoration: "none"}}><i className="fab fa-linkedin barIcons"></i></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/james-kim-teamplayer/" sytle={{textDecoration: "none"}}><i className="fab fa-linkedin barIcons"></i></a>
               </span>
 
             </Toolbar>
