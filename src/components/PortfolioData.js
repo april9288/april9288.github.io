@@ -51,7 +51,7 @@ export const portfoliosFromData = [
     page: 'https://april9288.github.io/CssGridGame/',
     repo: 'https://github.com/april9288/CssGridGame/',
     image: './static/gridgame.png',
-    skills: ["All","React", "Group Project"]
+    skills: ["All","React", "Open Source"]
   },
   {
     id: 7,
@@ -111,7 +111,7 @@ export const portfoliosFromData = [
   {
     id: 13,
     title: 'Running Late',
-    content: "You're running late because of high traffic. But it's dangerous to write an email to your manager while driving. Use my web app! Register beforehand, and click twice.",
+    content: "You are running late for work. But it's dangerous to write an excuse email while driving. Use my web app. Login. Click. That's it.",
     page: 'https://april9288.github.io/runninglate/',
     repo: 'https://github.com/april9288/runninglate',
     image: './static/runninglate.png',
