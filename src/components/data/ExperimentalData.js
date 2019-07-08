@@ -1,4 +1,4 @@
-export const portfoliosFromData = [
+export const experimentalData = [
   {
     id: 1,
     title: 'Repairion',
@@ -107,15 +107,5 @@ export const portfoliosFromData = [
     image: 'https://images.unsplash.com/photo-1500771309643-de18b0aea901?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=350&q=80',
     skills: ["All", "Express.js", "Mongoose", "Firebase", "Postgresql"],
     backend: "https://github.com/april9288/chatterbox_api"
-  },
-  {
-    id: 13,
-    title: 'Running Late',
-    content: "You are running late for work. But it's dangerous to write an excuse email while driving. Use my web app. Login. Click. That's it.",
-    page: 'https://april9288.github.io/runninglate/',
-    repo: 'https://github.com/april9288/runninglate',
-    image: './static/runninglate.png',
-    skills: ["All", "React", "Express.js", "Firebase", "Sendgrid api"],
-    backend: "https://github.com/april9288/runninglate_api"
-  },
+  }
 ];

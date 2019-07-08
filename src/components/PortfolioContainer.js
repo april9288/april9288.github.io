@@ -62,16 +62,17 @@ const chips = (classes, skills) => {
         bgColor = {
           background : "rgb(14, 125, 194)"
         }
-    } else if (skill === "Node.js" || skill === "Express.js") {
+    } else if (skill === "Express.js") {
         bgColor = {
-          background : "rgb(62, 134, 61)"
+          color: "rgb(52,52,52)",
+          border: "1px solid rgb(52,52,52)"
         }
     } else if (skill === "MongoDB" || skill === "Mongoose") {
         bgColor = {
           backgroundColor: "#529949",
           backgroundImage: "linear-gradient(90deg, #529949 25%, #412f1f 100%)"
         }
-    } else if (skill === "Firebase") {
+    } else if (skill.includes("Firebase")) {
         bgColor = {
           background: "#f5820b",
           backgroundImage : "linear-gradient(270deg, #f5820b 25%, #FFE32C 100%)"
@@ -85,6 +86,37 @@ const chips = (classes, skills) => {
         bgColor = {
           backgroundColor: "#0064a5",
           backgroundImage: "linear-gradient(90deg, #0064a5 25%, #336791 100%)"
+        }
+    } else if (skill === "Nginx") {
+        bgColor = {
+          backgroundColor: "rgb(13,147,75)"
+        }
+    } else if (skill === "Digital Ocean") {
+        bgColor = {
+          color: "rgb(0, 129, 255)",
+          border: "1px solid rgb(0, 129, 255)"
+        }
+    } else if (skill === "Heroku") {
+        bgColor = {
+          color: "rgb(98, 21, 175)",
+          border: "1px solid rgb(98, 21, 175)"
+        }
+    } else if (skill === "Jest") {
+        bgColor = {
+          backgroundColor: "rgb(149, 64, 88)"
+        }
+    } else if (skill === "Enzyme") {
+        bgColor = {
+          backgroundColor: "rgb(252, 92, 100)"
+        }
+    } else if (skill === "CircleCI") {
+        bgColor = {
+          backgroundColor: "rgb(52,52,52)"
+        }
+    } else if (skill === "AWS S3") {
+        bgColor = {
+          backgroundColor: "rgb(225, 84, 68)",
+          backgroundImage: "linear-gradient(90deg, rgb(225, 84, 70) 25%, rgb(124, 28, 20) 100%)"
         }
     } else {
         bgColor = {
@@ -119,9 +151,13 @@ render() {
           <Typography gutterBottom variant="headline" component="h2">
             {onePortfolio.title}
           </Typography>
-          <Typography component="p">
-            {onePortfolio.content}
-          </Typography>
+
+          {
+            (Array.isArray(onePortfolio.content))
+            ?(onePortfolio.content.map((val,index)=><Typography key={index} component="p" style={{paddingBottom:"0.4rem"}}>{val}</Typography>))
+            :<Typography component="p">{onePortfolio.content}</Typography>
+          }
+
           <div className={classes.chipsContainer}>
           {
             chips(classes, onePortfolio.skills)

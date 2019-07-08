@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import FirstPage from './FirstPage';
 import Skillsets from './Skillsets';
+
+import Playground from './Playground';
+
 import Footer from './Footer';
 import './App.css';
 
@@ -11,7 +14,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
 import PortfolioContainer from './PortfolioContainer';
-import { portfoliosFromData } from './PortfolioData';
+import { portfoliosFromData } from './data/PortfolioData';
+import { experimentalData } from './data/ExperimentalData';
 
 const styles = theme => ({
   root: {
@@ -42,29 +46,26 @@ const Portfolios = (portfolios) => {
 }
 
 class App extends Component {
-constructor() {
-	super();
-	this.state = {
+state = {
     portfolios : portfoliosFromData,
-		filter : 'All',
+    experimental : experimentalData
+		// filter : 'All',
 	}
-	
-} 
 
-
-filterClick = (iconClicked) => {
-	let filter = iconClicked;
-	this.setState({filter});
-}
+// filterClick = (iconClicked) => {
+// 	let filter = iconClicked;
+// 	this.setState({filter});
+// }
 
 render() {
 	const { classes } = this.props;
 
   const sortedPortfolio = this.state.portfolios.sort((a,b)=> b.id - a.id)
+  const sortedExperimental = this.state.experimental.sort((a,b)=> b.id - a.id)
 
-  const filteredPortfolio = sortedPortfolio.filter(portfolio => {
-      return portfolio.skills.includes(this.state.filter) || portfolio.skills.includes(...this.state.filter);
-    })
+  // const filteredPortfolio = sortedPortfolio.filter(portfolio => {
+  //     return portfolio.skills.includes(this.state.filter) || portfolio.skills.includes(...this.state.filter);
+  //   })
 
 	return (
 	<div className="App">
@@ -91,9 +92,15 @@ render() {
 		<Skillsets filterClick={this.filterClick}/>
 	</section>
 
-	<section className={classes.Portfolios}>
-		{Portfolios(filteredPortfolio)}
-	</section>
+  <section className={classes.Portfolios}>
+    {Portfolios(sortedPortfolio)}
+  </section>
+
+  <Playground>  
+    <section className={classes.Portfolios}>
+      {Portfolios(sortedExperimental)}
+    </section>
+  </Playground>
 
   <Footer />
 
