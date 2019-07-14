@@ -19,7 +19,7 @@ export const portfoliosFromData = [
     title: 'Grubhub-Mock',
     content: [
     "- Developed a front-end application mocking Grubhub's calendar scheduler using CSS grid.",
-    "- Compressed webpack bundle from 4mb to 43kb and increased web performance from 0 to 97, measured by Chrome lighthouse.",
+    "- Optimized with code-splitting and achieved a 100% score on Chrome Lighthouse.",
     "- Set up Nginx as a reverse-proxy server and deployed on Digital Ocean Ubuntu 18.04.",
     "- Performed unit testing with Jest & Enzyme and achieved a 99% code coverage.", 
     "- Automated the CI/CD process with CircleCI."
