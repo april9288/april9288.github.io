@@ -23,7 +23,7 @@ const styles = theme => ({
 
 class NestedList extends React.Component {
   state = {
-    open: false,
+    open: true,
   };
 
   handleClick = () => {

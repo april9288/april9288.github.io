@@ -17,6 +17,7 @@ const styles = theme => ({
   card: {
     maxWidth: 345,
     margin: "2rem",
+    // height: 'fit-content'
     display: "grid"
   },
   chipsContainer: {
@@ -118,6 +119,11 @@ const chips = (classes, skills) => {
           backgroundColor: "rgb(225, 84, 68)",
           backgroundImage: "linear-gradient(90deg, rgb(225, 84, 70) 25%, rgb(124, 28, 20) 100%)"
         }
+    } else if (skill === "AWS EC2") {
+        bgColor = {
+          color: "rgb(237, 131, 52)",
+          border: "1px solid rgb(237, 131, 52)"
+        }
     } else {
         bgColor = {
           backgroundColor: "#12375c",
@@ -138,6 +144,14 @@ render() {
 
   return (
     <Card className={classes.card}>
+        {
+          (onePortfolio.category) &&
+          (
+          <Typography component="p" style={{padding:"0.5rem", fontWeight: "bolder"}}>
+            {onePortfolio.category}
+          </Typography>
+          )
+        }
       <CardActionArea target="_blank" component="a" href={onePortfolio.page}>
         <CardMedia
           component="img"

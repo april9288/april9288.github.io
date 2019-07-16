@@ -45,15 +45,6 @@ export const experimentalData = [
     backend: "https://github.com/april9288/fruitz_api"
   },
   {
-    id: 6,
-    title: 'CSS Grid Game',
-    content: "It's my first group project. It's a flexbox-froggy style web game built with React.",
-    page: 'https://april9288.github.io/CssGridGame/',
-    repo: 'https://github.com/april9288/CssGridGame/',
-    image: './static/gridgame.png',
-    skills: ["All","React", "Open Source"]
-  },
-  {
     id: 7,
     title: 'YouMedia (with Redux)',
     content: "It's a Youtube clone website. You can search and watch videos. It's built with React and Redux. 100% stateless.",
@@ -107,5 +98,20 @@ export const experimentalData = [
     image: 'https://images.unsplash.com/photo-1500771309643-de18b0aea901?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=350&q=80',
     skills: ["All", "Express.js", "Mongoose", "Firebase", "Postgresql"],
     backend: "https://github.com/april9288/chatterbox_api"
-  }
+  },
+  {
+    id: 13,
+    title: 'Running Late',
+    content: [
+    "- You are running late for work. But it's dangerous to write an excuse email while driving. Use my app. Login. Click. That's it.",
+    "- Improved UX by implementing Social Login with Firebase.",
+    "- Deployed express server on Heroku.",
+    "- Utilized Sendgrid API to send an email from the web app.",
+    ],
+    page: 'https://april9288.github.io/runninglate/',
+    repo: 'https://github.com/april9288/runninglate',
+    image: './static/runninglate.png',
+    skills: ["React", "Express.js", "Firebase Auth", "Firebase DB", "Heroku", "Sendgrid api"],
+    backend: "https://github.com/april9288/runninglate_api"
+  },
 ];
