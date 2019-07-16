@@ -50,7 +50,7 @@ export const portfoliosFromData = [
     category: '# Medium Blog',
     title: 'How I got a 100% Lighthouse score with my React app',
     content: [
-    "- Wrote a Medium article about web performance optimization.",
+    "- Published a Medium article about web performance optimization.",
     "- Run a performance audit against Grubhub Clone, and achieved a 100% score on the audit.",
     "- Compressed bundle.js with Gzip, Brotli.",
     "- Compressed image files with webp format.",
