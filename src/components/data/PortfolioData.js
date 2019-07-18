@@ -26,7 +26,7 @@ export const portfoliosFromData = [
     "- Implemented DB replica set to handle 4500 RPS within 0.1 % of error", 
     ], 
     repo: 'https://github.com/april9288/nav',
-    image: './static/nordstrom.png',
+    image: './static/microservice22.png',
     skills: ["Postgresql", "Streaming Replica", "Nginx", "AWS EC2", "Loader.io", "Node.js Streams"],
   },
   {
