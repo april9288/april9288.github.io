@@ -5,7 +5,7 @@ export const portfoliosFromData = [
     title: 'CSS Grid Game',
     content: [
     "- It's a React app that helps users learn CSS Flexbox syntax with playing game",
-    "- Contributed to open source work, and currently marked as a #1 contributor.",
+    "- Contributed to open source work, and currently marked as #1 contributor.",
     "- Totally refactored legacy codebase with React.js and CSS Flexbox.",
     "- Deployed on Github Pages"
     ],
@@ -41,7 +41,7 @@ export const portfoliosFromData = [
     "- Automated the CI/CD process with CircleCI."
     ], 
     page: 'http://138.68.22.104/?id=10',
-    repo: 'https://github.com/hrla29-group-targaryen/time-sponsored',
+    repo: 'https://github.com/hrla29-group-targaryen/time-sponsored-optimized',
     image: './static/grubhub.png',
     skills: ["React", "Express.js", "Mongoose", "Nginx", "Digital Ocean", "Heroku", "Jest", "Enzyme", "CircleCI", "AWS S3",],
   },
